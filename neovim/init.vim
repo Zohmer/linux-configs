@@ -5,21 +5,28 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+
 call plug#begin()
 " Plugins go here
 
 Plug 'preservim/nerdtree'
 Plug 'davidhalter/jedi-vim'
 Plug 'haishanh/night-owl.vim'
+Plug 'gryf/pylint-vim'
 
 call plug#end()
 
-" Night owl theme config
 
+" Night owl theme config
 if (has("termguicolors"))
  set termguicolors
 endif
 
 syntax enable
 colorscheme night-owl
+
+
+" Standard configs
+:set number
+
 
