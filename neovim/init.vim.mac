@@ -1,0 +1,3 @@
+" Standard configs
+:set number
+:set updatetime=100
